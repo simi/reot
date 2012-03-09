@@ -1,7 +1,7 @@
 # Loads mkmf which is used to make makefiles for Ruby extensions
 require 'mkmf'
 
-$CFLAGS = "-Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings"
+$CFLAGS = "-Wall -Wno-multichar"
 
 # Give it a name
 extension_name = 'reot'
