@@ -43,7 +43,7 @@ extern "C" VALUE method_convert(VALUE self, VALUE filepath) {
     return Qfalse;
   }
 
-  if(!input) {
+  if(!input && !output) {
     return Qfalse;
   }
 
