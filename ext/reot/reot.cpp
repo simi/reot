@@ -11,14 +11,14 @@ VALUE Reot = Qnil;
 
 extern "C" void Init_reot();
 
-extern "C" VALUE method_convert(VALUE self, VALUE filepath);
+extern "C" VALUE method_convert(VALUE self, VALUE filepath, VALUE destination);
 
 extern "C" void Init_reot() {
   Reot = rb_define_module("Reot");
-  rb_define_singleton_method(Reot, "convert!", (VALUE(*)(...))&method_convert, 1);
+  rb_define_singleton_method(Reot, "convert!", (VALUE(*)(...))&method_convert, 2);
 }
 
-extern "C" VALUE method_convert(VALUE self, VALUE filepath) {
+extern "C" VALUE method_convert(VALUE self, VALUE filepath, VALUE destination) {
   const size_t kFontInitSize = 8192;
   vector<uint8_t> eotHeader(512);
   size_t overlayDst = 0;
@@ -29,12 +29,10 @@ extern "C" VALUE method_convert(VALUE self, VALUE filepath) {
   FILE *input, *output;
   unsigned char *fontData;
 
-  char *input_file;
+  char *input_file, *output_file;
   input_file = StringValuePtr(filepath);
+  output_file = StringValuePtr(destination);
 
-  char output_file[strlen(input_file) + 4];
-  strcpy(output_file, input_file);
-  strcat(output_file, ".eot");
 
   input = fopen(input_file, "rb");
   output = fopen(output_file, "wb");

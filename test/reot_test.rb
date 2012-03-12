@@ -6,12 +6,11 @@ class TestReot < MiniTest::Unit::TestCase
   end
 
   def test_reot_converts_ttf_to_eot
-    assert Reot.convert!("test/fonts/Metalista.ttf")
-    assert_equal 28672, File.size("test/fonts/Metalista.ttf.eot")
+    assert Reot.convert!("test/fonts/Metalista.ttf", "test/fonts/Metalista.eot")
+    assert_equal 28672, File.size("test/fonts/Metalista.eot")
   end
 
   def test_returns_false_for_bad_file_path
-    assert !Reot.convert!("un/ex/isting/path.ttf")
-    assert !File.exists?("un/ex/isting/path.ttf.eot")
+    assert !Reot.convert!("un/ex/isting/path.ttf", "please/here.eot")
   end
 end
