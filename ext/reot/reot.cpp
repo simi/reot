@@ -7,6 +7,10 @@
 #include "ruby.h"
 #include "OpenTypeUtilities.h"
 
+#ifndef SIZE_MAX
+# define SIZE_MAX UINT_MAX
+#endif
+
 VALUE Reot = Qnil;
 
 extern "C" void Init_reot();
