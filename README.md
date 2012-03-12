@@ -7,8 +7,7 @@ Example
 -------
 
 ```ruby
-  Reot.convert!('awesome_webfont.ttf') #=> true
+  Reot.convert!('awesome_webfont.ttf', 'awesome_webfont.eot) #=> true
 ```
 
-Your converted file is now in same folder with ttf, just with added
-'.eot' extension.
+Generates ```awesome_webfont.eot```!
