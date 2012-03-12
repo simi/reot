@@ -7,7 +7,7 @@ Example
 -------
 
 ```ruby
-  Reot.convert!('awesome_webfont.ttf', 'awesome_webfont.eot) #=> true
+  Reot.convert!('awesome_webfont.ttf', 'awesome_webfont.eot') #=> true
 ```
 
 Generates ```awesome_webfont.eot```!
