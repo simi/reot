@@ -12,6 +12,6 @@ class TestReot < MiniTest::Unit::TestCase
 
   def test_returns_false_for_bad_file_path
     assert !Reot.convert!("un/ex/isting/path.ttf")
-    assert !File.exists?("test/fonts/Metalista.ttf.eot")
+    assert !File.exists?("un/ex/isting/path.ttf.eot")
   end
 end
