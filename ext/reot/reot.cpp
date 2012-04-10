@@ -67,8 +67,12 @@ extern "C" VALUE method_convert(VALUE self, VALUE filepath, VALUE destination) {
   if (getEOTHeader(fontData, fontSize, eotHeader, overlayDst, overlaySrc, overlayLength)) {
     fwrite(&eotHeader[0], eotHeader.size(), 1, output);
     fwrite(fontData, fontSize, 1, output);
+    fclose(output);
+    fclose(input);
     return Qtrue;
   } else {
+    fclose(output);
+    fclose(input);
     return Qfalse;
   }
 }
