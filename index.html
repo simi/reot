@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Reot by simi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Reot</h1>
+        <p>ttf2eot binding for ruby</p>
+        <p class="view"><a href="https://github.com/simi/reot">View the Project on GitHub <small>simi/reot</small></a></p>
+        <ul>
+          <li><a href="https://github.com/simi/reot/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/simi/reot/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/simi/reot">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Reot</h1>
+
+<p>Simple library for converting <a href="http://en.wikipedia.org/wiki/TrueType">ttf</a> to <a href="http://en.wikipedia.org/wiki/Embedded_OpenType">eot</a> format. It is using <a href="http://code.google.com/p/ttf2eot/">ttf2eot</a>, just instead of using console, you can use simple ruby module.</p>
+
+<p>Ruby 1.9 only!</p>
+
+<h2>Install</h2>
+
+<p><code>gem install reot</code></p>
+
+<h2>Example</h2>
+
+<div class="highlight">
+<pre>  <span class="no">Reot</span><span class="o">.</span><span class="n">convert!</span><span class="p">(</span><span class="s1">'awesome_webfont.ttf'</span><span class="p">,</span> <span class="s1">'awesome_webfont.eot'</span><span class="p">)</span> <span class="c1">#=&gt; true</span>
+</pre>
+</div>
+
+
+<p>Generates <code>awesome_webfont.eot</code>!</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/simi">simi</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-28860433-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
