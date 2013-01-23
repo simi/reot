@@ -27,7 +27,8 @@
         </ul>
       </header>
       <section>
-        <h1>Reot</h1>
+        <h1>Reot (ttf2eot in ruby) <a href="http://travis-ci.org/simi/reot"><img src="https://secure.travis-ci.org/simi/reot.png?branch=master" alt="Build Status"></a>
+</h1>
 
 <p>Simple library for converting <a href="http://en.wikipedia.org/wiki/TrueType">ttf</a> to <a href="http://en.wikipedia.org/wiki/Embedded_OpenType">eot</a> format. It is using <a href="http://code.google.com/p/ttf2eot/">ttf2eot</a>, just instead of using console, you can use simple ruby module.</p>
 
@@ -39,11 +40,8 @@
 
 <h2>Example</h2>
 
-<div class="highlight">
-<pre>  <span class="no">Reot</span><span class="o">.</span><span class="n">convert!</span><span class="p">(</span><span class="s1">'awesome_webfont.ttf'</span><span class="p">,</span> <span class="s1">'awesome_webfont.eot'</span><span class="p">)</span> <span class="c1">#=&gt; true</span>
-</pre>
-</div>
-
+<div class="highlight"><pre>  <span class="no">Reot</span><span class="o">.</span><span class="n">convert!</span><span class="p">(</span><span class="s1">'awesome_webfont.ttf'</span><span class="p">,</span> <span class="s1">'awesome_webfont.eot'</span><span class="p">)</span> <span class="c1">#=&gt; true</span>
+</pre></div>
 
 <p>Generates <code>awesome_webfont.eot</code>!</p>
       </section>
@@ -52,7 +50,7 @@
       <p>Project maintained by <a href="https://github.com/simi">simi</a></p>
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
