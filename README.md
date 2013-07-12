@@ -3,7 +3,10 @@ Reot (ttf2eot in ruby) [![Build Status](https://secure.travis-ci.org/simi/reot.p
 
 Simple library for converting [ttf](http://en.wikipedia.org/wiki/TrueType) to [eot](http://en.wikipedia.org/wiki/Embedded_OpenType) format. It is using [ttf2eot](http://code.google.com/p/ttf2eot/), just instead of using console, you can use simple ruby module.
 
-Ruby 1.9 only!
+Supported rubies:
+- 1.9.3
+- 2.0.0
+- Rubinius 1.9 mode
 
 Install
 -------
